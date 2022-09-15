@@ -1,0 +1,21 @@
+server:
+  port: 8888
+logging:
+  file: ../../../ocp-config-server.log
+info:
+  component: OCP Config Server
+management:
+  security:
+    enabled: false
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:/java/ocp-config-data
+        # Enable encrypt property for config-server side decryption while serving configuration (if true, also requires `encrypt.key`)
+#        encrypt:
+#          enabled: false
+#        git:
+#          uri: file:../../ocp-config-dataocp-config-data
+

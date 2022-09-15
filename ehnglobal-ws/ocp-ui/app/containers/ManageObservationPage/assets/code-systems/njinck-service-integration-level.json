@@ -1,0 +1,28 @@
+{
+  "concept": [
+    {
+      "code": "1",
+      "display": "Service Integration Level 1"
+    },
+    {
+      "code": "2",
+      "display": "Service Integration Level 2"
+    },
+    {
+      "code": "3",
+      "display": "Service Integration Level 3"
+    }
+  ],
+  "content": "complete",
+  "description": "This is a declaration of the service integration level part of the NJ inCK System",
+  "id": "8a47cac6-9bab-4bbf-be40-614d5d2683c7",
+  "meta": {
+    "lastUpdated": "2022-01-17T19:25:19.702946+00:00",
+    "versionId": "MTY0MjQ0NzUxOTcwMjk0NjAwMA"
+  },
+  "name": "njinck-service-integration-level",
+  "publisher": "Example Publisher",
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "title": "SIL"
+}

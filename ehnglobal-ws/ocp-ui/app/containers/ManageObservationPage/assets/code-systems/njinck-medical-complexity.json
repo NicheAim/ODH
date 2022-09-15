@@ -1,0 +1,28 @@
+{
+  "concept": [
+    {
+      "code": "1",
+      "display": "Non-Complex Non-Chronic"
+    },
+    {
+      "code": "2",
+      "display": "Non-Complex Chronic"
+    },
+    {
+      "code": "3",
+      "display": "Complex Chronic"
+    }
+  ],
+  "content": "complete",
+  "description": "This is a declaration of medical complexity part of the NJ inCK System",
+  "id": "3347ae93-ea53-443b-8aa5-c0db2930ea4d",
+  "meta": {
+    "lastUpdated": "2022-01-17T19:25:19.702946+00:00",
+    "versionId": "MTY0MjQ0NzUxOTcwMjk0NjAwMA"
+  },
+  "name": "njinck-medical-complexity",
+  "publisher": "Example Publisher",
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "title": "PMCA"
+}

@@ -1,0 +1,36 @@
+/*
+ *
+ * AssignHealthCareServiceToLocationPage constants
+ *
+ */
+
+/**
+ *  AssignHealthCareServiceToLocationPage action types
+ *  @type {string}
+ */
+export const INITIALIZE_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT = 'ocpui/AssignHealthCareServiceToLocationPage/INITIALIZE_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT';
+
+export const GET_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT = 'ocpui/AssignHealthCareServiceToLocationPage/GET_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT';
+export const GET_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT_SUCCESS = 'ocpui/AssignHealthCareServiceToLocationPage/GET_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT_SUCCESS';
+export const GET_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT_ERROR = 'ocpui/AssignHealthCareServiceToLocationPage/GET_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT_ERROR';
+
+export const UPDATE_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT = 'ocpui/AssignHealthCareServiceToLocationPage/UPDATE_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT';
+export const UPDATE_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT_ERROR = 'ocpui/AssignHealthCareServiceToLocationPage/UPDATE_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT_ERROR';
+
+export const UNASSIGN_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT = 'ocpui/AssignHealthCareServiceToLocationPage/UNASSIGN_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT';
+export const UNASSIGN_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT_ERROR = 'ocpui/AssignHealthCareServiceToLocationPage/UNASSIGN_HEALTHCARE_SERVICES_LOCATION_ASSIGNMENT_ERROR';
+
+export const MARK_HEALTHCARE_SERVICE_AS_ASSIGNED = 'ocpui/AssignHealthCareServiceToLocationPage/MARK_HEALTHCARE_SERVICE_AS_ASSIGNED';
+export const UNMARK_HEALTHCARE_SERVICE_AS_ASSIGNED = 'ocpui/AssignHealthCareServiceToLocationPage/UNMARK_HEALTHCARE_SERVICE_AS_ASSIGNED';
+
+/**
+ *  Status constants
+ *
+ * @type {string}
+ */
+export const STATUS_ACTIVE = 'active';
+
+/**
+*  Other constants
+*
+*/

@@ -1,0 +1,53 @@
+server:
+  port: 8445
+
+info:
+  component: Omnibus Care Plan - SMART on FHIR Core Service
+hystrix.command.default.execution.timeout.enabled: false
+ribbon:
+  ReadTimeout: 50000
+spring:
+  redis:
+    # http://localhost:6379
+    host: ${SMART_CORE_REDIS_HOST:localhost}
+smart-core:
+  server-host: ${SMART_CORE_SERVER_HOST:http://localhost/smart}
+  context-initializer: ${SMART_CORE_CONTEXT_INITIALIZER:https://example-url.com/ocp-ui/smart-context}
+  oauth2: https://keycloak.example.com/auth/admin/realms/realm-example
+  # http://localhost:8080/auth/realms/demo/protocol/openid-connect/auth
+  oauth2-authorize: https://keycloak.example.com/auth/realms/realm-example/protocol/openid-connect/auth
+  oauth2-token: https://keycloak.example.com/auth/realms/realm-example/protocol/openid-connect/token
+  public-client-secret: cdfffa4d-61d4-4f65-bacd-aaf35b6ad1d5
+  client_socket_timeout_in_ms: 768000
+  expiration_token: 60 # minutes
+  data_store_tech: ${DATA_STORE_TECH:fhir_proxy} # fhir_proxy | gha | hapi
+  fhir: ${SMART_CORE_FHIR_SERVER:https://example-url/api/fhir-proxy}
+  jwt_iss: ${SMART_CORE_JWT_ISSUER:https://example-url.com/}
+  jwt_sub: ${SMART_CORE_JWT_SUBJECT:https://example-url.com/}
+  # json base 64 array ["https://example-url.com/","https://dev-fhir-proxy-hbj57tqowq-uc.a.run.app/api/fhir-proxy"]
+  jwt_aud: ${SMART_CORE_JWT_AUDIENCE:example-secret}
+  jwt_secret: ${SMART_CORE_JWT_SECRET:example-secret}
+  gcloudbucketname: ${SMART_CORE_GCLOUD_BUCKET_NAME:zanenet-acf-smartapps}
+  gcloudbucketlocation: ${SMART_CORE_GCLOUD_BUCKET_LOCATION:US}
+  gcloudprojectid: ${SMART_CORE_GCLOUD_PROJECT_ID:zanenet-acf}
+security:
+  oauth2:
+    client:
+      client-id: smart-core
+      client-secret: cdfffa4d-61d4-4f65-bacd-aaf35b6ad1d5
+      access-token-uri: https://keycloak.example.com/auth/realms/realm-example/protocol/openid-connect/token
+  basic:
+    enabled: false
+---
+# updates configuration for docker environment
+spring.profiles: docker
+spring:
+  redis:
+    host: ${REDIS_HOST}
+feign:
+  client:
+    config:
+      oauth2ClientRestClient:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic

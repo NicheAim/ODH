@@ -1,0 +1,4 @@
+security:
+  oauth2:
+    client:
+      accessTokenUri: https://keycloak.example.com/keycloak/oauth/token

@@ -1,0 +1,7 @@
+version: "3"
+services:
+  ocp-fis:
+    image: bhits/ocp-fis:2.0.0
+    build:
+      context: ./
+

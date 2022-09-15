@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'us.gcr.io/zanenet-njinck/ocp-fis', '.' ]
+images:
+- 'us.gcr.io/zanenet-njinck/ocp-fis'

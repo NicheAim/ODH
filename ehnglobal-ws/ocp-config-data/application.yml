@@ -1,0 +1,32 @@
+# Override default configurations or Add more configurations for OCP PROJECTS
+
+# Context path configuration for all OCP UI projects.
+ocp:
+  ocp-ui:
+    context-path: ocp-ui
+---
+spring.profiles: eureka-client
+# propagate application status to Eureka
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+
+# NOTE  Above configuration Data is for Default Sharing Configuration With All Applications
+#       Following configuration Data is for Each Server Environments
+---
+spring.profiles: oauth2-resource-default
+security:
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      # If SSL is turned on in the UAA application, you must change/override the 'user-info-uri' property below
+      #   to use 'https://' instead of 'http://'. You must also change/override the port number in the URL.
+      user-info-uri: http://localhost:8080/uaa/userinfo
+      jwt:
+        keyValue:
+                         -----BEGIN PUBLIC KEY-----
+                         ${OCP_CONFIG_DATA_OAUTH_KEYCLOAK_TOKEN:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwXKhgxTrzu+2kmDGQttQ1SUqo50HA6U9HIuuVrkg9262s6AaXIQI+OH9DFARrQo2admK2hoIClAJZjmO2jtcRsfwN5avvybz83gce6qVTyrZxR25QV0WWoCFx+XqGfCnSdAo63opKYzN+Ty1rXzfq2TvB9kSGlVCr+rkfOK9xGxJ+LKyEsKbLYgEZYaxy8iTSBqFbnQaXCQF5YVx3eN9qRZP28tb3L8Ns4y9rLiAEYFOjBlwE8gXImyLMmD7AZBBeHJWOclQnbNkIhFY5peMYBBsKbuyfwTUHo8vKkQOy3CedRRDPD2P/pPoe9CrCCpXx4amTElhYag8JXFxOMbMHwIDAQAB}
+                         -----END PUBLIC KEY-----
+---

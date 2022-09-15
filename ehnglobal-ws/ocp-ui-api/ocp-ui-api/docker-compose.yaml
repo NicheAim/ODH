@@ -1,0 +1,7 @@
+version: "3"
+services:
+  ocp-ui-api:
+    image: bhits/ocp-ui-api:1.0.1
+    build:
+      context: ./
+

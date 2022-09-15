@@ -1,0 +1,13 @@
+{
+  "Medical Referral": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-category",
+          "code": "behavioral"
+        }
+      ],
+      "text": "Treatment"
+    }
+  ]
+}

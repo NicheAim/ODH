@@ -1,0 +1,43 @@
+server:
+  port: 8446
+logging:
+  file: /java/OCP_LOGS/ocp-ui-api/ocp-ui-api.log
+info:
+  component: OCP UI API
+ribbon:
+  ReadTimeout: 50000
+  listOfServers: http://localhost:8444
+hystrix.command.default.execution.timeout.enabled: false
+security:
+  oauth2:
+    client:
+      client-id: ocp-api
+      client-secret: 992efa3f-11c5-425b-b562-f76bd6e6c64f
+    resource:
+      userInfoUri: BUGFIX
+ocp:
+  ocp-ui-api:
+    oauth2:
+      authorization-server-endpoint: http://localhost:8080/uaa
+      oauth2-client:
+        client-id: ocp-ui
+        client-secret: changeit
+    smart:
+      client-ids:
+        - c2s_sof_app
+        - quippe
+        - bhworks
+        - 133b3843-5bc1-4293-938d-5debb071943a
+      patient-client-ids:
+        - c2s_sof_app
+    is-show-sample-user-login-details: false
+    sample-file-for-login-details:
+      file-name: sample-user-login-details.pdf
+keycloak:
+  url: https://keycloak.example.com/auth
+  realm: master
+  username: admin
+  password: covUvlmwFXChd8MdHeq5whswRpbcCuuxVTgj9DYhthyfRymmSRIoikGF8apsezap
+  clientid: admin-cli
+keycloak-search-client:
+  realm: realm-example

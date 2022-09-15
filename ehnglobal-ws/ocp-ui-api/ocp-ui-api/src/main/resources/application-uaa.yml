@@ -1,0 +1,45 @@
+# Declare the configuration for the server like the application default
+server:
+  port: 8446
+logging:
+  file: /java/OCP_LOGS/ocp-ui-api/ocp-ui-api.log
+info:
+  component: OCP UI API
+ribbon:
+  ReadTimeout: 50000
+  listOfServers: ${OCP_UI_API_FIS_ENPOINT:http://ocp-fis:8444}
+hystrix.command.default.execution.timeout.enabled: false
+# Include changes according to the uaa profile
+security:
+  name: uaa
+  oauth2:
+    client:
+      access-token-uri: https://keycloak.example.com/auth/realms/realm-example/protocol/openid-connect/token
+ocp:
+  ocp-ui-api:
+    oauth2:
+      authorization-server-endpoint: https://keycloak.example.com/auth/realms/realm-example
+      users-password-server-endpoint: https://keycloak.example.com/auth/admin/realms/realm-example/users
+      authorization-configuration: https://keycloak.example.com/auth/realms/realm-example/.well-known/openid-configuration
+      autohirization-client-id: ocpUiApi
+      authorization-client-secret: ed5bf849-b699-4b11-8118-aac796d8db2f
+      authorization-redirect-url: ${OCP_UI_API_AUTHORIZATION_REDIRECT_ENDPOINT:http://localhost:3000}/ocp-ui-api/receiver
+      authorization-redirect-ui: ${OCP_UI_API_AUTHORIZATION_REDIRECT_ENDPOINT:http://localhost:3000}/ocp-ui/login
+feign-client:
+  auth:
+    form-encoded-client:
+      name: uaaForm
+    rest-client:
+      name: uaaRest
+    user-token-rest-client:
+      name: uaaUserTokenRestClient
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 720000
+        readTimeout: 720000
+
+smart:
+  core-url: http://localhost:8445

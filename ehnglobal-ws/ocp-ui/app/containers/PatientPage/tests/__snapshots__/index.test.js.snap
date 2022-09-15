@@ -1,0 +1,1269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PatientPage
+    getPatient={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "id",
+          ],
+        ],
+      }
+    }
+    match={
+      Object {
+        "params": Object {
+          "id": "id",
+        },
+      }
+    }
+    patient={
+      Object {
+        "id": "1",
+        "name": Array [
+          "test",
+        ],
+      }
+    }
+    user={
+      Object {
+        "role": "patientRole",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <HelmetWrapper
+          encodeSpecialCharacters={true}
+        >
+          <title>
+            Patient
+          </title>
+          <meta
+            content="Patient page of Omnibus Care Plan application"
+            name="description"
+          />
+        </HelmetWrapper>,
+        <div>
+          <PatientDetails
+            flattenPatientData={[Function]}
+            patient={
+              Object {
+                "id": "1",
+                "name": Array [
+                  "test",
+                ],
+              }
+            }
+          />
+          <withReducer(withSaga(Connect(SmartAppLauncher))) />
+          <GoldenLayout
+            componentMetadata={
+              Array [
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "tasks",
+                  "text": "Tasks",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "appointments",
+                  "text": "Appointments",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "communications",
+                  "text": "Communications",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "toDos",
+                  "text": "To Do",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "coverage",
+                  "text": "Coverage",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "calendar",
+                  "text": "Calendar",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "careTeams",
+                  "text": "Care teams",
+                },
+              ]
+            }
+            containerHeight="75vh"
+            containerId="golden-patient"
+            containerWidth="95vw"
+            stateMetadata={
+              Object {
+                "content": Array [
+                  Object {
+                    "content": Array [
+                      Object {
+                        "content": Array [
+                          Object {
+                            "content": Array [
+                              Object {
+                                "content": Array [
+                                  Object {
+                                    "componentName": "toDos",
+                                    "isClosable": true,
+                                    "reorderEnabled": true,
+                                    "title": "Patient's TO DO",
+                                    "type": "component",
+                                  },
+                                  Object {
+                                    "componentName": "tasks",
+                                    "isClosable": true,
+                                    "reorderEnabled": true,
+                                    "title": "Patient's Tasks",
+                                    "type": "component",
+                                  },
+                                ],
+                                "type": "stack",
+                              },
+                            ],
+                            "type": "column",
+                          },
+                          Object {
+                            "componentName": "appointments",
+                            "isClosable": true,
+                            "reorderEnabled": true,
+                            "title": "Patient's Appointments",
+                            "type": "component",
+                          },
+                        ],
+                        "height": 50,
+                        "type": "row",
+                      },
+                      Object {
+                        "content": Array [
+                          Object {
+                            "componentName": "careTeams",
+                            "isClosable": true,
+                            "reorderEnabled": true,
+                            "title": "Patient's Care teams",
+                            "type": "component",
+                          },
+                          Object {
+                            "componentName": "communications",
+                            "isClosable": true,
+                            "reorderEnabled": true,
+                            "title": "Patient's Communications",
+                            "type": "component",
+                          },
+                          Object {
+                            "componentName": "coverage",
+                            "isClosable": true,
+                            "reorderEnabled": true,
+                            "title": "Patient's Insurance/Benefits",
+                            "type": "component",
+                          },
+                        ],
+                        "height": 50,
+                        "type": "row",
+                      },
+                    ],
+                    "type": "column",
+                  },
+                ],
+                "dimensions": Object {
+                  "borderWidth": 10,
+                  "dragProxyHeight": 200,
+                  "dragProxyWidth": 300,
+                  "headerHeight": 30,
+                  "minItemHeight": 400,
+                  "minItemWidth": 200,
+                },
+                "isClosable": true,
+                "labels": Object {
+                  "close": "close",
+                  "maximise": "maximise",
+                  "minimise": "minimise",
+                  "popin": "pop in",
+                  "popout": "open in new window",
+                  "tabDropdown": "additional tabs",
+                },
+                "maximisedItemId": null,
+                "openPopouts": Array [],
+                "reorderEnabled": true,
+                "settings": Object {
+                  "blockedPopoutsThrowError": true,
+                  "closePopoutsOnUnload": true,
+                  "constrainDragToContainer": false,
+                  "hasHeaders": true,
+                  "popoutWholeStack": false,
+                  "reorderEnabled": true,
+                  "reorderOnTabMenuClick": true,
+                  "responsiveMode": "onload",
+                  "selectionEnabled": false,
+                  "showCloseIcon": true,
+                  "showMaximiseIcon": true,
+                  "showPopoutIcon": false,
+                  "tabControlOffset": 10,
+                  "tabOverlapAllowance": 0,
+                },
+                "title": "",
+              }
+            }
+          />
+        </div>,
+      ],
+      "color": "primary",
+      "padding": "20px",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <title>
+              Patient
+            </title>,
+            <meta
+              content="Patient page of Omnibus Care Plan application"
+              name="description"
+            />,
+          ],
+          "encodeSpecialCharacters": true,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Patient",
+            },
+            "ref": null,
+            "rendered": "Patient",
+            "type": "title",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "content": "Patient page of Omnibus Care Plan application",
+              "name": "description",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "meta",
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <PatientDetails
+              flattenPatientData={[Function]}
+              patient={
+                Object {
+                  "id": "1",
+                  "name": Array [
+                    "test",
+                  ],
+                }
+              }
+            />,
+            <withReducer(withSaga(Connect(SmartAppLauncher))) />,
+            <GoldenLayout
+              componentMetadata={
+                Array [
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "tasks",
+                    "text": "Tasks",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "appointments",
+                    "text": "Appointments",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "communications",
+                    "text": "Communications",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "toDos",
+                    "text": "To Do",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "coverage",
+                    "text": "Coverage",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "calendar",
+                    "text": "Calendar",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "careTeams",
+                    "text": "Care teams",
+                  },
+                ]
+              }
+              containerHeight="75vh"
+              containerId="golden-patient"
+              containerWidth="95vw"
+              stateMetadata={
+                Object {
+                  "content": Array [
+                    Object {
+                      "content": Array [
+                        Object {
+                          "content": Array [
+                            Object {
+                              "content": Array [
+                                Object {
+                                  "content": Array [
+                                    Object {
+                                      "componentName": "toDos",
+                                      "isClosable": true,
+                                      "reorderEnabled": true,
+                                      "title": "Patient's TO DO",
+                                      "type": "component",
+                                    },
+                                    Object {
+                                      "componentName": "tasks",
+                                      "isClosable": true,
+                                      "reorderEnabled": true,
+                                      "title": "Patient's Tasks",
+                                      "type": "component",
+                                    },
+                                  ],
+                                  "type": "stack",
+                                },
+                              ],
+                              "type": "column",
+                            },
+                            Object {
+                              "componentName": "appointments",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Appointments",
+                              "type": "component",
+                            },
+                          ],
+                          "height": 50,
+                          "type": "row",
+                        },
+                        Object {
+                          "content": Array [
+                            Object {
+                              "componentName": "careTeams",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Care teams",
+                              "type": "component",
+                            },
+                            Object {
+                              "componentName": "communications",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Communications",
+                              "type": "component",
+                            },
+                            Object {
+                              "componentName": "coverage",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Insurance/Benefits",
+                              "type": "component",
+                            },
+                          ],
+                          "height": 50,
+                          "type": "row",
+                        },
+                      ],
+                      "type": "column",
+                    },
+                  ],
+                  "dimensions": Object {
+                    "borderWidth": 10,
+                    "dragProxyHeight": 200,
+                    "dragProxyWidth": 300,
+                    "headerHeight": 30,
+                    "minItemHeight": 400,
+                    "minItemWidth": 200,
+                  },
+                  "isClosable": true,
+                  "labels": Object {
+                    "close": "close",
+                    "maximise": "maximise",
+                    "minimise": "minimise",
+                    "popin": "pop in",
+                    "popout": "open in new window",
+                    "tabDropdown": "additional tabs",
+                  },
+                  "maximisedItemId": null,
+                  "openPopouts": Array [],
+                  "reorderEnabled": true,
+                  "settings": Object {
+                    "blockedPopoutsThrowError": true,
+                    "closePopoutsOnUnload": true,
+                    "constrainDragToContainer": false,
+                    "hasHeaders": true,
+                    "popoutWholeStack": false,
+                    "reorderEnabled": true,
+                    "reorderOnTabMenuClick": true,
+                    "responsiveMode": "onload",
+                    "selectionEnabled": false,
+                    "showCloseIcon": true,
+                    "showMaximiseIcon": true,
+                    "showPopoutIcon": false,
+                    "tabControlOffset": 10,
+                    "tabOverlapAllowance": 0,
+                  },
+                  "title": "",
+                }
+              }
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "flattenPatientData": [Function],
+              "patient": Object {
+                "id": "1",
+                "name": Array [
+                  "test",
+                ],
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "componentMetadata": Array [
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "tasks",
+                  "text": "Tasks",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "appointments",
+                  "text": "Appointments",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "communications",
+                  "text": "Communications",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "toDos",
+                  "text": "To Do",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "coverage",
+                  "text": "Coverage",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "calendar",
+                  "text": "Calendar",
+                },
+                Object {
+                  "factoryMethod": [Function],
+                  "name": "careTeams",
+                  "text": "Care teams",
+                },
+              ],
+              "containerHeight": "75vh",
+              "containerId": "golden-patient",
+              "containerWidth": "95vw",
+              "stateMetadata": Object {
+                "content": Array [
+                  Object {
+                    "content": Array [
+                      Object {
+                        "content": Array [
+                          Object {
+                            "content": Array [
+                              Object {
+                                "content": Array [
+                                  Object {
+                                    "componentName": "toDos",
+                                    "isClosable": true,
+                                    "reorderEnabled": true,
+                                    "title": "Patient's TO DO",
+                                    "type": "component",
+                                  },
+                                  Object {
+                                    "componentName": "tasks",
+                                    "isClosable": true,
+                                    "reorderEnabled": true,
+                                    "title": "Patient's Tasks",
+                                    "type": "component",
+                                  },
+                                ],
+                                "type": "stack",
+                              },
+                            ],
+                            "type": "column",
+                          },
+                          Object {
+                            "componentName": "appointments",
+                            "isClosable": true,
+                            "reorderEnabled": true,
+                            "title": "Patient's Appointments",
+                            "type": "component",
+                          },
+                        ],
+                        "height": 50,
+                        "type": "row",
+                      },
+                      Object {
+                        "content": Array [
+                          Object {
+                            "componentName": "careTeams",
+                            "isClosable": true,
+                            "reorderEnabled": true,
+                            "title": "Patient's Care teams",
+                            "type": "component",
+                          },
+                          Object {
+                            "componentName": "communications",
+                            "isClosable": true,
+                            "reorderEnabled": true,
+                            "title": "Patient's Communications",
+                            "type": "component",
+                          },
+                          Object {
+                            "componentName": "coverage",
+                            "isClosable": true,
+                            "reorderEnabled": true,
+                            "title": "Patient's Insurance/Benefits",
+                            "type": "component",
+                          },
+                        ],
+                        "height": 50,
+                        "type": "row",
+                      },
+                    ],
+                    "type": "column",
+                  },
+                ],
+                "dimensions": Object {
+                  "borderWidth": 10,
+                  "dragProxyHeight": 200,
+                  "dragProxyWidth": 300,
+                  "headerHeight": 30,
+                  "minItemHeight": 400,
+                  "minItemWidth": 200,
+                },
+                "isClosable": true,
+                "labels": Object {
+                  "close": "close",
+                  "maximise": "maximise",
+                  "minimise": "minimise",
+                  "popin": "pop in",
+                  "popout": "open in new window",
+                  "tabDropdown": "additional tabs",
+                },
+                "maximisedItemId": null,
+                "openPopouts": Array [],
+                "reorderEnabled": true,
+                "settings": Object {
+                  "blockedPopoutsThrowError": true,
+                  "closePopoutsOnUnload": true,
+                  "constrainDragToContainer": false,
+                  "hasHeaders": true,
+                  "popoutWholeStack": false,
+                  "reorderEnabled": true,
+                  "reorderOnTabMenuClick": true,
+                  "responsiveMode": "onload",
+                  "selectionEnabled": false,
+                  "showCloseIcon": true,
+                  "showMaximiseIcon": true,
+                  "showPopoutIcon": false,
+                  "tabControlOffset": 10,
+                  "tabOverlapAllowance": 0,
+                },
+                "title": "",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <HelmetWrapper
+            encodeSpecialCharacters={true}
+          >
+            <title>
+              Patient
+            </title>
+            <meta
+              content="Patient page of Omnibus Care Plan application"
+              name="description"
+            />
+          </HelmetWrapper>,
+          <div>
+            <PatientDetails
+              flattenPatientData={[Function]}
+              patient={
+                Object {
+                  "id": "1",
+                  "name": Array [
+                    "test",
+                  ],
+                }
+              }
+            />
+            <withReducer(withSaga(Connect(SmartAppLauncher))) />
+            <GoldenLayout
+              componentMetadata={
+                Array [
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "tasks",
+                    "text": "Tasks",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "appointments",
+                    "text": "Appointments",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "communications",
+                    "text": "Communications",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "toDos",
+                    "text": "To Do",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "coverage",
+                    "text": "Coverage",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "calendar",
+                    "text": "Calendar",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "careTeams",
+                    "text": "Care teams",
+                  },
+                ]
+              }
+              containerHeight="75vh"
+              containerId="golden-patient"
+              containerWidth="95vw"
+              stateMetadata={
+                Object {
+                  "content": Array [
+                    Object {
+                      "content": Array [
+                        Object {
+                          "content": Array [
+                            Object {
+                              "content": Array [
+                                Object {
+                                  "content": Array [
+                                    Object {
+                                      "componentName": "toDos",
+                                      "isClosable": true,
+                                      "reorderEnabled": true,
+                                      "title": "Patient's TO DO",
+                                      "type": "component",
+                                    },
+                                    Object {
+                                      "componentName": "tasks",
+                                      "isClosable": true,
+                                      "reorderEnabled": true,
+                                      "title": "Patient's Tasks",
+                                      "type": "component",
+                                    },
+                                  ],
+                                  "type": "stack",
+                                },
+                              ],
+                              "type": "column",
+                            },
+                            Object {
+                              "componentName": "appointments",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Appointments",
+                              "type": "component",
+                            },
+                          ],
+                          "height": 50,
+                          "type": "row",
+                        },
+                        Object {
+                          "content": Array [
+                            Object {
+                              "componentName": "careTeams",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Care teams",
+                              "type": "component",
+                            },
+                            Object {
+                              "componentName": "communications",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Communications",
+                              "type": "component",
+                            },
+                            Object {
+                              "componentName": "coverage",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Insurance/Benefits",
+                              "type": "component",
+                            },
+                          ],
+                          "height": 50,
+                          "type": "row",
+                        },
+                      ],
+                      "type": "column",
+                    },
+                  ],
+                  "dimensions": Object {
+                    "borderWidth": 10,
+                    "dragProxyHeight": 200,
+                    "dragProxyWidth": 300,
+                    "headerHeight": 30,
+                    "minItemHeight": 400,
+                    "minItemWidth": 200,
+                  },
+                  "isClosable": true,
+                  "labels": Object {
+                    "close": "close",
+                    "maximise": "maximise",
+                    "minimise": "minimise",
+                    "popin": "pop in",
+                    "popout": "open in new window",
+                    "tabDropdown": "additional tabs",
+                  },
+                  "maximisedItemId": null,
+                  "openPopouts": Array [],
+                  "reorderEnabled": true,
+                  "settings": Object {
+                    "blockedPopoutsThrowError": true,
+                    "closePopoutsOnUnload": true,
+                    "constrainDragToContainer": false,
+                    "hasHeaders": true,
+                    "popoutWholeStack": false,
+                    "reorderEnabled": true,
+                    "reorderOnTabMenuClick": true,
+                    "responsiveMode": "onload",
+                    "selectionEnabled": false,
+                    "showCloseIcon": true,
+                    "showMaximiseIcon": true,
+                    "showPopoutIcon": false,
+                    "tabControlOffset": 10,
+                    "tabOverlapAllowance": 0,
+                  },
+                  "title": "",
+                }
+              }
+            />
+          </div>,
+        ],
+        "color": "primary",
+        "padding": "20px",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <title>
+                Patient
+              </title>,
+              <meta
+                content="Patient page of Omnibus Care Plan application"
+                name="description"
+              />,
+            ],
+            "encodeSpecialCharacters": true,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Patient",
+              },
+              "ref": null,
+              "rendered": "Patient",
+              "type": "title",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "content": "Patient page of Omnibus Care Plan application",
+                "name": "description",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "meta",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <PatientDetails
+                flattenPatientData={[Function]}
+                patient={
+                  Object {
+                    "id": "1",
+                    "name": Array [
+                      "test",
+                    ],
+                  }
+                }
+              />,
+              <withReducer(withSaga(Connect(SmartAppLauncher))) />,
+              <GoldenLayout
+                componentMetadata={
+                  Array [
+                    Object {
+                      "factoryMethod": [Function],
+                      "name": "tasks",
+                      "text": "Tasks",
+                    },
+                    Object {
+                      "factoryMethod": [Function],
+                      "name": "appointments",
+                      "text": "Appointments",
+                    },
+                    Object {
+                      "factoryMethod": [Function],
+                      "name": "communications",
+                      "text": "Communications",
+                    },
+                    Object {
+                      "factoryMethod": [Function],
+                      "name": "toDos",
+                      "text": "To Do",
+                    },
+                    Object {
+                      "factoryMethod": [Function],
+                      "name": "coverage",
+                      "text": "Coverage",
+                    },
+                    Object {
+                      "factoryMethod": [Function],
+                      "name": "calendar",
+                      "text": "Calendar",
+                    },
+                    Object {
+                      "factoryMethod": [Function],
+                      "name": "careTeams",
+                      "text": "Care teams",
+                    },
+                  ]
+                }
+                containerHeight="75vh"
+                containerId="golden-patient"
+                containerWidth="95vw"
+                stateMetadata={
+                  Object {
+                    "content": Array [
+                      Object {
+                        "content": Array [
+                          Object {
+                            "content": Array [
+                              Object {
+                                "content": Array [
+                                  Object {
+                                    "content": Array [
+                                      Object {
+                                        "componentName": "toDos",
+                                        "isClosable": true,
+                                        "reorderEnabled": true,
+                                        "title": "Patient's TO DO",
+                                        "type": "component",
+                                      },
+                                      Object {
+                                        "componentName": "tasks",
+                                        "isClosable": true,
+                                        "reorderEnabled": true,
+                                        "title": "Patient's Tasks",
+                                        "type": "component",
+                                      },
+                                    ],
+                                    "type": "stack",
+                                  },
+                                ],
+                                "type": "column",
+                              },
+                              Object {
+                                "componentName": "appointments",
+                                "isClosable": true,
+                                "reorderEnabled": true,
+                                "title": "Patient's Appointments",
+                                "type": "component",
+                              },
+                            ],
+                            "height": 50,
+                            "type": "row",
+                          },
+                          Object {
+                            "content": Array [
+                              Object {
+                                "componentName": "careTeams",
+                                "isClosable": true,
+                                "reorderEnabled": true,
+                                "title": "Patient's Care teams",
+                                "type": "component",
+                              },
+                              Object {
+                                "componentName": "communications",
+                                "isClosable": true,
+                                "reorderEnabled": true,
+                                "title": "Patient's Communications",
+                                "type": "component",
+                              },
+                              Object {
+                                "componentName": "coverage",
+                                "isClosable": true,
+                                "reorderEnabled": true,
+                                "title": "Patient's Insurance/Benefits",
+                                "type": "component",
+                              },
+                            ],
+                            "height": 50,
+                            "type": "row",
+                          },
+                        ],
+                        "type": "column",
+                      },
+                    ],
+                    "dimensions": Object {
+                      "borderWidth": 10,
+                      "dragProxyHeight": 200,
+                      "dragProxyWidth": 300,
+                      "headerHeight": 30,
+                      "minItemHeight": 400,
+                      "minItemWidth": 200,
+                    },
+                    "isClosable": true,
+                    "labels": Object {
+                      "close": "close",
+                      "maximise": "maximise",
+                      "minimise": "minimise",
+                      "popin": "pop in",
+                      "popout": "open in new window",
+                      "tabDropdown": "additional tabs",
+                    },
+                    "maximisedItemId": null,
+                    "openPopouts": Array [],
+                    "reorderEnabled": true,
+                    "settings": Object {
+                      "blockedPopoutsThrowError": true,
+                      "closePopoutsOnUnload": true,
+                      "constrainDragToContainer": false,
+                      "hasHeaders": true,
+                      "popoutWholeStack": false,
+                      "reorderEnabled": true,
+                      "reorderOnTabMenuClick": true,
+                      "responsiveMode": "onload",
+                      "selectionEnabled": false,
+                      "showCloseIcon": true,
+                      "showMaximiseIcon": true,
+                      "showPopoutIcon": false,
+                      "tabControlOffset": 10,
+                      "tabOverlapAllowance": 0,
+                    },
+                    "title": "",
+                  }
+                }
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "flattenPatientData": [Function],
+                "patient": Object {
+                  "id": "1",
+                  "name": Array [
+                    "test",
+                  ],
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "componentMetadata": Array [
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "tasks",
+                    "text": "Tasks",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "appointments",
+                    "text": "Appointments",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "communications",
+                    "text": "Communications",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "toDos",
+                    "text": "To Do",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "coverage",
+                    "text": "Coverage",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "calendar",
+                    "text": "Calendar",
+                  },
+                  Object {
+                    "factoryMethod": [Function],
+                    "name": "careTeams",
+                    "text": "Care teams",
+                  },
+                ],
+                "containerHeight": "75vh",
+                "containerId": "golden-patient",
+                "containerWidth": "95vw",
+                "stateMetadata": Object {
+                  "content": Array [
+                    Object {
+                      "content": Array [
+                        Object {
+                          "content": Array [
+                            Object {
+                              "content": Array [
+                                Object {
+                                  "content": Array [
+                                    Object {
+                                      "componentName": "toDos",
+                                      "isClosable": true,
+                                      "reorderEnabled": true,
+                                      "title": "Patient's TO DO",
+                                      "type": "component",
+                                    },
+                                    Object {
+                                      "componentName": "tasks",
+                                      "isClosable": true,
+                                      "reorderEnabled": true,
+                                      "title": "Patient's Tasks",
+                                      "type": "component",
+                                    },
+                                  ],
+                                  "type": "stack",
+                                },
+                              ],
+                              "type": "column",
+                            },
+                            Object {
+                              "componentName": "appointments",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Appointments",
+                              "type": "component",
+                            },
+                          ],
+                          "height": 50,
+                          "type": "row",
+                        },
+                        Object {
+                          "content": Array [
+                            Object {
+                              "componentName": "careTeams",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Care teams",
+                              "type": "component",
+                            },
+                            Object {
+                              "componentName": "communications",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Communications",
+                              "type": "component",
+                            },
+                            Object {
+                              "componentName": "coverage",
+                              "isClosable": true,
+                              "reorderEnabled": true,
+                              "title": "Patient's Insurance/Benefits",
+                              "type": "component",
+                            },
+                          ],
+                          "height": 50,
+                          "type": "row",
+                        },
+                      ],
+                      "type": "column",
+                    },
+                  ],
+                  "dimensions": Object {
+                    "borderWidth": 10,
+                    "dragProxyHeight": 200,
+                    "dragProxyWidth": 300,
+                    "headerHeight": 30,
+                    "minItemHeight": 400,
+                    "minItemWidth": 200,
+                  },
+                  "isClosable": true,
+                  "labels": Object {
+                    "close": "close",
+                    "maximise": "maximise",
+                    "minimise": "minimise",
+                    "popin": "pop in",
+                    "popout": "open in new window",
+                    "tabDropdown": "additional tabs",
+                  },
+                  "maximisedItemId": null,
+                  "openPopouts": Array [],
+                  "reorderEnabled": true,
+                  "settings": Object {
+                    "blockedPopoutsThrowError": true,
+                    "closePopoutsOnUnload": true,
+                    "constrainDragToContainer": false,
+                    "hasHeaders": true,
+                    "popoutWholeStack": false,
+                    "reorderEnabled": true,
+                    "reorderOnTabMenuClick": true,
+                    "responsiveMode": "onload",
+                    "selectionEnabled": false,
+                    "showCloseIcon": true,
+                    "showMaximiseIcon": true,
+                    "showPopoutIcon": false,
+                    "tabControlOffset": 10,
+                    "tabOverlapAllowance": 0,
+                  },
+                  "title": "",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;

@@ -1,0 +1,20 @@
+server:
+  port: 8449
+spring:
+  redis:
+    host: redis
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          netflix: trace
+zuul:
+  routes:
+    smart-core:
+      path: /**
+      sensitiveHeaders: Cookie,Set-Cookie
+      url: ${SMART_GATEWAY_SMART_CORE_URL:http://smart-core:8445}
+#eureka:
+#  instance:
+#    prefer-ip-address: true

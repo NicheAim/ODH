@@ -1,0 +1,72 @@
+server:
+  port: 80
+logging:
+  file: /java/OCP_LOGS/ocp-edge-server/ocp-edge-server.log
+info:
+  component: OCP Edge Server
+response:
+  header:
+    key: WWW-Authenticate
+    value: Application driven
+# secure management endpoints
+management:
+  security:
+    enabled: false
+security:
+  basic:
+    enabled: false
+# Disable Hystrix timeout globally (for all services)
+hystrix.command.default.execution.timeout.enabled: false
+ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 990000
+# propagate application status to Eureka
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+  routes:
+    ocp-ui-api:
+      path: /ocp-ui-api/**
+      # Override Zuul default:
+      sensitiveHeaders: Cookie,Set-Cookie
+    smart-gateway:
+      path: /smart/**
+      # Override Zuul default:
+      sensitiveHeaders: Cookie,Set-Cookie
+    ocp-ui:
+      path: /ocp-ui/**
+      sensitiveHeaders: ''
+      url: http://localhost:3000/
+    _hmr:
+      path: /__webpack_hmr
+      sensitiveHeaders: ''
+      url: http://localhost:3000/
+---
+# updates configuration for docker environment
+spring.profiles: docker
+zuul:
+  routes:
+    ocp-ui:
+      path: /ocp-ui/**
+      sensitiveHeaders: ''
+      url: http://ocp-ui:3000/
+    _hmr:
+      path: /__webpack_hmr
+      sensitiveHeaders: ''
+      url: http://ocp-ui:3000/
+    guvnor:
+      path: /guvnor/**
+      url: http://guvnor:8080/guvnor
+    document-validator:
+      path: /document-validator/**
+      url: http://document-validator:8080/document-validator
+    dss:
+      path: /dss/**
+    vss:
+      path: /vss/**

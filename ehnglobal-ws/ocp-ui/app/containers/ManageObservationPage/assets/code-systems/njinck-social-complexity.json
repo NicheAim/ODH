@@ -1,0 +1,32 @@
+{
+  "concept": [
+    {
+      "code": "1",
+      "display": "1 Point Items"
+    },
+    {
+      "code": "2",
+      "display": "2 Point Items"
+    },
+    {
+      "code": "3",
+      "display": "3 Point Items"
+    },
+    {
+      "code": "4",
+      "display": "4 Point Items"
+    }
+  ],
+  "content": "complete",
+  "description": "This is a declaration of social complexity part of the NJ inCK System",
+  "id": "7b6cae74-7987-4f5e-89a2-3f47c932ab11",
+  "meta": {
+    "lastUpdated": "2022-01-17T19:25:19.702946+00:00",
+    "versionId": "MTY0MjQ0NzUxOTcwMjk0NjAwMA"
+  },
+  "name": "njinck-social-complexity",
+  "publisher": "Example Publisher",
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "title": "SOCIALCOMPLEX"
+}

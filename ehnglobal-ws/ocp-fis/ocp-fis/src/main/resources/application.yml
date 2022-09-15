@@ -1,0 +1,121 @@
+server:
+  port: 8444
+spring:
+  application:
+    name: ocp-fis
+  config:
+    use-legacy-processing: true
+  cloud:
+    config:
+      import-check:
+        enabled: false
+  profiles:
+    active: keycloak # Default profile
+logging:
+  file:
+    name: /home/adrian/Workspace/nicheaim/ocplogs/ocpfis.log
+info:
+  component: Omnibus Care Plan - FHIR Integration Service
+hystrix.command.default.execution.timeout.enabled: false
+ribbon:
+  ReadTimeout: 50000
+  listOfServers: http://localhost:8455
+security:
+  oauth2:
+    client:
+      clientId: ocp-api
+      clientSecret: 992efa3f-11c5-425b-b562-f76bd6e6c64f
+      accessTokenUri: https://keycloak.example.com/auth/realms/ocp/protocol/openid-connect/token
+  basic:
+    enabled: false
+ocp-fis:
+  fhir:
+    # hapi / gcp
+    data_store_tech: hapi
+    serverUrl: ${OCP_FIS_FHIR_SERVER_URL:http://localhost:8082/fhir}
+    serverSecurityEnabled: true
+    clientSocketTimeoutInMs: 768000
+    encoding: json
+    defaultResourceBundlePageSize: 10
+    gcp: ${ENABLE_GCP:false}
+    expiration_token: 60
+    # Encoded base64 ["https://keycloak.example"]
+    jwt_issuer: ${JWT_ISSUER:WyJodHRwczovL2Rldi1vY3AubXluamluY2suY29tLyJd}
+    # ["https://keycloak.example","https://proxy.example"]
+    jwt_audience: ${JWT_AUDIENCE:WyJodHRwczovL2Rldi1vY3AubXluamluY2suY29tLyIsImh0dHBzOi8vZGV2LWZoaXItcHJveHktaGJqNTd0cW93cS11Yy5hLnJ1bi5hcHAvYXBpL2ZoaXItcHJveHkiXQ==}
+    jwt_secret: ${JWT_SECRET:DiEV3neyR4KOUoy3XqppVx75vOxwbLyi}
+    # Encoded base64 ["https://keycloak.example"]
+    jwt_subject: ${JWT_SUBJECT:WyJodHRwczovL2Rldi1vY3AubXluamluY2suY29tLyJd}
+    number_bundle_per_page_patients_max: 1000
+  ResourceSinglePageLimit: 100
+  defaultOrganization: 902
+  defaultPractitioner: 1961
+  defaultEndPeriod: 20
+  defaultMaxDuration: 10
+  activityDefinition:
+    version: 1.1.0
+    pagination:
+      default-size: 20
+  appointment:
+    pagination:
+      default-size: 20
+  communication:
+    pagination:
+      default-size: 20
+  location:
+    pagination:
+      default-size: 20
+  practitioner:
+    pagination:
+      default-size: 20
+  organization:
+    pagination:
+      default-size: 20
+  patient:
+    pagination:
+      default-size: 20
+    mrn:
+      codeSystem: ${MRN_SYSTEM_URL:https://healthcare.googleapis.com/v1/projects/mrn}
+      codeSystemOID: 2.16.840.1.113883.3.468.2
+      displayName: MRN/EID
+      prefix: OCP-DEV
+      length: 10
+  healthcareService:
+    pagination:
+      default-size: 20
+  relatedPerson:
+    pagination:
+      default-size: 20
+  careTeam:
+    pagination:
+      default-size: 20
+  coverage:
+    pagination:
+      default-size: 20
+  pdf:
+    pdfConfigs:
+      - type: consent-pdf
+        title: Consent to Share My Health Information
+        pdFont: TIMES_ROMAN
+        pdfPageSize: LETTER
+      - type: consent-revocation-pdf
+        title: Revocation of Consent to Share My Health Information
+        pdFont: TIMES_ROMAN
+        pdfPageSize: LETTER
+  provenanceEnabled: false
+  mintEnabled: false
+  validationEnabled: false
+---
+# updates configuration for docker environment
+spring.profiles: docker
+ribbon.listOfServers: http://ocp-hie-api:8455
+security:
+  oauth2:
+    client:
+      accessTokenUri: https://uaa:8080/uaa/oauth/token
+ocp-fis:
+  mintEnabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: ${eureka.client.protocol:http}://ocp-discovery-server:8761/eureka/

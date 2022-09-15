@@ -1,0 +1,1 @@
+export const PERMISSION_GROUPS_TABLE_COLUMNS = '2fr 3fr 100px';

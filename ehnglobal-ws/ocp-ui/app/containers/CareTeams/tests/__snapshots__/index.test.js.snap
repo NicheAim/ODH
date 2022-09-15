@@ -1,0 +1,1351 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CareTeams /> snapshot tests should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CareTeams
+    careTeamStatuses={
+      Array [
+        Object {
+          "code": "active",
+          "display": "Active",
+        },
+        Object {
+          "code": "inactive",
+          "display": "Inactive",
+        },
+        Object {
+          "code": "suspended",
+          "display": "suspended",
+        },
+      ]
+    }
+    careTeams={
+      Object {
+        "data": Object {
+          "currentPage": 10,
+          "elements": Array [
+            Object {
+              "id": "1",
+              "name": "a",
+              "subjectFirstName": "subjectFirstName1",
+              "subjectId": "subjectId1",
+              "subjectLastName": "subjectLastName1",
+            },
+            Object {
+              "id": "2",
+              "name": "b",
+              "subjectFirstName": "subjectFirstName2",
+              "subjectId": "subjectId2",
+              "subjectLastName": "subjectLastName2",
+            },
+          ],
+          "totalNumberOfPages": 100,
+        },
+        "loading": false,
+        "query": Object {
+          "a1": "a1",
+          "a2": "a2",
+        },
+        "statusList": Array [
+          "active",
+          "inactive",
+        ],
+      }
+    }
+    getCareTeams={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            1,
+          ],
+        ],
+      }
+    }
+    initializeCareTeams={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    initializeLookups={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    patient={
+      Object {
+        "name": Array [
+          Object {
+            "firstName": "firstName",
+            "lastName": "lastName",
+          },
+        ],
+      }
+    }
+    user={
+      Object {
+        "role": "patientRole",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <SizeMe(PanelToolbar)
+          addNewItem={
+            Object {
+              "labelName": <FormattedMessage
+                defaultMessage="New Care Team"
+                id="ocpui.containers.CareTeams.buttonLabelCreateNew"
+                values={Object {}}
+              />,
+              "linkUrl": "/ocp-ui/manage-care-team",
+            }
+          }
+          allowedAddNewItemRoles={
+            Array [
+              "ORGADMIN",
+              "CAREMNGR",
+            ]
+          }
+          onSize={[Function]}
+          showFilterIcon={false}
+          showSearchIcon={false}
+          showSettingIcon={false}
+          showUploadIcon={false}
+        />,
+        <LinearProgressIndicator
+          loading={false}
+        />,
+        <ContentSection__ContentSection
+          fontSize="12px"
+        >
+          <SizeMe(StickyDiv__StickyDiv)
+            onSize={[Function]}
+            top="0px"
+          >
+            <Grid__Grid
+              columns={1}
+              gap=""
+            >
+              <Cell__Cell>
+                <InfoSection__InfoSection
+                  fontSize="12px"
+                  margin="10px 10px"
+                  maxWidth="none"
+                  width="auto"
+                >
+                  <div>
+                    The 
+                    <FormattedMessage
+                      defaultMessage="care teams"
+                      id="ocpui.containers.CareTeams.header"
+                      values={Object {}}
+                    />
+                     for 
+                    <InlineLabel__InlineLabel
+                      htmlFor="patient_name_1"
+                    >
+                      <span
+                        id="patient_name_1"
+                      >
+                        firstName lastName
+                      </span>
+                       
+                    </InlineLabel__InlineLabel>
+                    are :
+                  </div>
+                </InfoSection__InfoSection>
+              </Cell__Cell>
+            </Grid__Grid>
+          </SizeMe(StickyDiv__StickyDiv)>
+          <styled.div>
+            <SizeMe(CareTeamTable)
+              elements={
+                Array [
+                  Object {
+                    "id": "1",
+                    "name": "a",
+                    "subjectFirstName": "subjectFirstName1",
+                    "subjectId": "subjectId1",
+                    "subjectLastName": "subjectLastName1",
+                  },
+                  Object {
+                    "id": "2",
+                    "name": "b",
+                    "subjectFirstName": "subjectFirstName2",
+                    "subjectId": "subjectId2",
+                    "subjectLastName": "subjectLastName2",
+                  },
+                ]
+              }
+              isExpanded={false}
+              isPatient={true}
+              manageCareTeamUrl="/ocp-ui/manage-care-team"
+              onSize={[Function]}
+              relativeTop={0}
+            />
+            <CenterAlignedUltimatePagination
+              boundaryPagesRange={1}
+              currentPage={10}
+              hideEllipsis={false}
+              hideFirstAndLastPageLinks={false}
+              hidePreviousAndNextPageLinks={false}
+              onChange={[Function]}
+              siblingPagesRange={1}
+              totalPages={100}
+            />
+            <RecordsRange
+              currentPage={10}
+              currentPageSize={undefined}
+              totalElements={undefined}
+              totalPages={100}
+            />
+          </styled.div>
+        </ContentSection__ContentSection>,
+      ],
+      "minWidth": "auto",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "addNewItem": Object {
+            "labelName": <FormattedMessage
+              defaultMessage="New Care Team"
+              id="ocpui.containers.CareTeams.buttonLabelCreateNew"
+              values={Object {}}
+            />,
+            "linkUrl": "/ocp-ui/manage-care-team",
+          },
+          "allowedAddNewItemRoles": Array [
+            "ORGADMIN",
+            "CAREMNGR",
+          ],
+          "onSize": [Function],
+          "showFilterIcon": false,
+          "showSearchIcon": false,
+          "showSettingIcon": false,
+          "showUploadIcon": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "loading": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <SizeMe(StickyDiv__StickyDiv)
+              onSize={[Function]}
+              top="0px"
+            >
+              <Grid__Grid
+                columns={1}
+                gap=""
+              >
+                <Cell__Cell>
+                  <InfoSection__InfoSection
+                    fontSize="12px"
+                    margin="10px 10px"
+                    maxWidth="none"
+                    width="auto"
+                  >
+                    <div>
+                      The 
+                      <FormattedMessage
+                        defaultMessage="care teams"
+                        id="ocpui.containers.CareTeams.header"
+                        values={Object {}}
+                      />
+                       for 
+                      <InlineLabel__InlineLabel
+                        htmlFor="patient_name_1"
+                      >
+                        <span
+                          id="patient_name_1"
+                        >
+                          firstName lastName
+                        </span>
+                         
+                      </InlineLabel__InlineLabel>
+                      are :
+                    </div>
+                  </InfoSection__InfoSection>
+                </Cell__Cell>
+              </Grid__Grid>
+            </SizeMe(StickyDiv__StickyDiv)>,
+            false,
+            <styled.div>
+              <SizeMe(CareTeamTable)
+                elements={
+                  Array [
+                    Object {
+                      "id": "1",
+                      "name": "a",
+                      "subjectFirstName": "subjectFirstName1",
+                      "subjectId": "subjectId1",
+                      "subjectLastName": "subjectLastName1",
+                    },
+                    Object {
+                      "id": "2",
+                      "name": "b",
+                      "subjectFirstName": "subjectFirstName2",
+                      "subjectId": "subjectId2",
+                      "subjectLastName": "subjectLastName2",
+                    },
+                  ]
+                }
+                isExpanded={false}
+                isPatient={true}
+                manageCareTeamUrl="/ocp-ui/manage-care-team"
+                onSize={[Function]}
+                relativeTop={0}
+              />
+              <CenterAlignedUltimatePagination
+                boundaryPagesRange={1}
+                currentPage={10}
+                hideEllipsis={false}
+                hideFirstAndLastPageLinks={false}
+                hidePreviousAndNextPageLinks={false}
+                onChange={[Function]}
+                siblingPagesRange={1}
+                totalPages={100}
+              />
+              <RecordsRange
+                currentPage={10}
+                currentPageSize={undefined}
+                totalElements={undefined}
+                totalPages={100}
+              />
+            </styled.div>,
+          ],
+          "fontSize": "12px",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Grid__Grid
+                columns={1}
+                gap=""
+              >
+                <Cell__Cell>
+                  <InfoSection__InfoSection
+                    fontSize="12px"
+                    margin="10px 10px"
+                    maxWidth="none"
+                    width="auto"
+                  >
+                    <div>
+                      The 
+                      <FormattedMessage
+                        defaultMessage="care teams"
+                        id="ocpui.containers.CareTeams.header"
+                        values={Object {}}
+                      />
+                       for 
+                      <InlineLabel__InlineLabel
+                        htmlFor="patient_name_1"
+                      >
+                        <span
+                          id="patient_name_1"
+                        >
+                          firstName lastName
+                        </span>
+                         
+                      </InlineLabel__InlineLabel>
+                      are :
+                    </div>
+                  </InfoSection__InfoSection>
+                </Cell__Cell>
+              </Grid__Grid>,
+              "onSize": [Function],
+              "top": "0px",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Cell__Cell>
+                    <InfoSection__InfoSection
+                      fontSize="12px"
+                      margin="10px 10px"
+                      maxWidth="none"
+                      width="auto"
+                    >
+                      <div>
+                        The 
+                        <FormattedMessage
+                          defaultMessage="care teams"
+                          id="ocpui.containers.CareTeams.header"
+                          values={Object {}}
+                        />
+                         for 
+                        <InlineLabel__InlineLabel
+                          htmlFor="patient_name_1"
+                        >
+                          <span
+                            id="patient_name_1"
+                          >
+                            firstName lastName
+                          </span>
+                           
+                        </InlineLabel__InlineLabel>
+                        are :
+                      </div>
+                    </InfoSection__InfoSection>
+                  </Cell__Cell>,
+                  false,
+                ],
+                "columns": 1,
+                "gap": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <InfoSection__InfoSection
+                      fontSize="12px"
+                      margin="10px 10px"
+                      maxWidth="none"
+                      width="auto"
+                    >
+                      <div>
+                        The 
+                        <FormattedMessage
+                          defaultMessage="care teams"
+                          id="ocpui.containers.CareTeams.header"
+                          values={Object {}}
+                        />
+                         for 
+                        <InlineLabel__InlineLabel
+                          htmlFor="patient_name_1"
+                        >
+                          <span
+                            id="patient_name_1"
+                          >
+                            firstName lastName
+                          </span>
+                           
+                        </InlineLabel__InlineLabel>
+                        are :
+                      </div>
+                    </InfoSection__InfoSection>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <div>
+                        The 
+                        <FormattedMessage
+                          defaultMessage="care teams"
+                          id="ocpui.containers.CareTeams.header"
+                          values={Object {}}
+                        />
+                         for 
+                        <InlineLabel__InlineLabel
+                          htmlFor="patient_name_1"
+                        >
+                          <span
+                            id="patient_name_1"
+                          >
+                            firstName lastName
+                          </span>
+                           
+                        </InlineLabel__InlineLabel>
+                        are :
+                      </div>,
+                      "fontSize": "12px",
+                      "margin": "10px 10px",
+                      "maxWidth": "none",
+                      "width": "auto",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "The ",
+                          <FormattedMessage
+                            defaultMessage="care teams"
+                            id="ocpui.containers.CareTeams.header"
+                            values={Object {}}
+                          />,
+                          " for ",
+                          <InlineLabel__InlineLabel
+                            htmlFor="patient_name_1"
+                          >
+                            <span
+                              id="patient_name_1"
+                            >
+                              firstName lastName
+                            </span>
+                             
+                          </InlineLabel__InlineLabel>,
+                          "are :",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "The ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "defaultMessage": "care teams",
+                            "id": "ocpui.containers.CareTeams.header",
+                            "values": Object {},
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        " for ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": Array [
+                              <span
+                                id="patient_name_1"
+                              >
+                                firstName lastName
+                              </span>,
+                              " ",
+                            ],
+                            "htmlFor": "patient_name_1",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "firstName lastName",
+                                "id": "patient_name_1",
+                              },
+                              "ref": null,
+                              "rendered": "firstName lastName",
+                              "type": "span",
+                            },
+                            " ",
+                          ],
+                          "type": [Function],
+                        },
+                        "are :",
+                      ],
+                      "type": "div",
+                    },
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                false,
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <SizeMe(CareTeamTable)
+                  elements={
+                    Array [
+                      Object {
+                        "id": "1",
+                        "name": "a",
+                        "subjectFirstName": "subjectFirstName1",
+                        "subjectId": "subjectId1",
+                        "subjectLastName": "subjectLastName1",
+                      },
+                      Object {
+                        "id": "2",
+                        "name": "b",
+                        "subjectFirstName": "subjectFirstName2",
+                        "subjectId": "subjectId2",
+                        "subjectLastName": "subjectLastName2",
+                      },
+                    ]
+                  }
+                  isExpanded={false}
+                  isPatient={true}
+                  manageCareTeamUrl="/ocp-ui/manage-care-team"
+                  onSize={[Function]}
+                  relativeTop={0}
+                />,
+                <CenterAlignedUltimatePagination
+                  boundaryPagesRange={1}
+                  currentPage={10}
+                  hideEllipsis={false}
+                  hideFirstAndLastPageLinks={false}
+                  hidePreviousAndNextPageLinks={false}
+                  onChange={[Function]}
+                  siblingPagesRange={1}
+                  totalPages={100}
+                />,
+                <RecordsRange
+                  currentPage={10}
+                  currentPageSize={undefined}
+                  totalElements={undefined}
+                  totalPages={100}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "elements": Array [
+                    Object {
+                      "id": "1",
+                      "name": "a",
+                      "subjectFirstName": "subjectFirstName1",
+                      "subjectId": "subjectId1",
+                      "subjectLastName": "subjectLastName1",
+                    },
+                    Object {
+                      "id": "2",
+                      "name": "b",
+                      "subjectFirstName": "subjectFirstName2",
+                      "subjectId": "subjectId2",
+                      "subjectLastName": "subjectLastName2",
+                    },
+                  ],
+                  "isExpanded": false,
+                  "isPatient": true,
+                  "manageCareTeamUrl": "/ocp-ui/manage-care-team",
+                  "onSize": [Function],
+                  "relativeTop": 0,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "boundaryPagesRange": 1,
+                  "currentPage": 10,
+                  "hideEllipsis": false,
+                  "hideFirstAndLastPageLinks": false,
+                  "hidePreviousAndNextPageLinks": false,
+                  "onChange": [Function],
+                  "siblingPagesRange": 1,
+                  "totalPages": 100,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "currentPage": 10,
+                  "currentPageSize": undefined,
+                  "totalElements": undefined,
+                  "totalPages": 100,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <SizeMe(PanelToolbar)
+            addNewItem={
+              Object {
+                "labelName": <FormattedMessage
+                  defaultMessage="New Care Team"
+                  id="ocpui.containers.CareTeams.buttonLabelCreateNew"
+                  values={Object {}}
+                />,
+                "linkUrl": "/ocp-ui/manage-care-team",
+              }
+            }
+            allowedAddNewItemRoles={
+              Array [
+                "ORGADMIN",
+                "CAREMNGR",
+              ]
+            }
+            onSize={[Function]}
+            showFilterIcon={false}
+            showSearchIcon={false}
+            showSettingIcon={false}
+            showUploadIcon={false}
+          />,
+          <LinearProgressIndicator
+            loading={false}
+          />,
+          <ContentSection__ContentSection
+            fontSize="12px"
+          >
+            <SizeMe(StickyDiv__StickyDiv)
+              onSize={[Function]}
+              top="0px"
+            >
+              <Grid__Grid
+                columns={1}
+                gap=""
+              >
+                <Cell__Cell>
+                  <InfoSection__InfoSection
+                    fontSize="12px"
+                    margin="10px 10px"
+                    maxWidth="none"
+                    width="auto"
+                  >
+                    <div>
+                      The 
+                      <FormattedMessage
+                        defaultMessage="care teams"
+                        id="ocpui.containers.CareTeams.header"
+                        values={Object {}}
+                      />
+                       for 
+                      <InlineLabel__InlineLabel
+                        htmlFor="patient_name_1"
+                      >
+                        <span
+                          id="patient_name_1"
+                        >
+                          firstName lastName
+                        </span>
+                         
+                      </InlineLabel__InlineLabel>
+                      are :
+                    </div>
+                  </InfoSection__InfoSection>
+                </Cell__Cell>
+              </Grid__Grid>
+            </SizeMe(StickyDiv__StickyDiv)>
+            <styled.div>
+              <SizeMe(CareTeamTable)
+                elements={
+                  Array [
+                    Object {
+                      "id": "1",
+                      "name": "a",
+                      "subjectFirstName": "subjectFirstName1",
+                      "subjectId": "subjectId1",
+                      "subjectLastName": "subjectLastName1",
+                    },
+                    Object {
+                      "id": "2",
+                      "name": "b",
+                      "subjectFirstName": "subjectFirstName2",
+                      "subjectId": "subjectId2",
+                      "subjectLastName": "subjectLastName2",
+                    },
+                  ]
+                }
+                isExpanded={false}
+                isPatient={true}
+                manageCareTeamUrl="/ocp-ui/manage-care-team"
+                onSize={[Function]}
+                relativeTop={0}
+              />
+              <CenterAlignedUltimatePagination
+                boundaryPagesRange={1}
+                currentPage={10}
+                hideEllipsis={false}
+                hideFirstAndLastPageLinks={false}
+                hidePreviousAndNextPageLinks={false}
+                onChange={[Function]}
+                siblingPagesRange={1}
+                totalPages={100}
+              />
+              <RecordsRange
+                currentPage={10}
+                currentPageSize={undefined}
+                totalElements={undefined}
+                totalPages={100}
+              />
+            </styled.div>
+          </ContentSection__ContentSection>,
+        ],
+        "minWidth": "auto",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "addNewItem": Object {
+              "labelName": <FormattedMessage
+                defaultMessage="New Care Team"
+                id="ocpui.containers.CareTeams.buttonLabelCreateNew"
+                values={Object {}}
+              />,
+              "linkUrl": "/ocp-ui/manage-care-team",
+            },
+            "allowedAddNewItemRoles": Array [
+              "ORGADMIN",
+              "CAREMNGR",
+            ],
+            "onSize": [Function],
+            "showFilterIcon": false,
+            "showSearchIcon": false,
+            "showSettingIcon": false,
+            "showUploadIcon": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "loading": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <SizeMe(StickyDiv__StickyDiv)
+                onSize={[Function]}
+                top="0px"
+              >
+                <Grid__Grid
+                  columns={1}
+                  gap=""
+                >
+                  <Cell__Cell>
+                    <InfoSection__InfoSection
+                      fontSize="12px"
+                      margin="10px 10px"
+                      maxWidth="none"
+                      width="auto"
+                    >
+                      <div>
+                        The 
+                        <FormattedMessage
+                          defaultMessage="care teams"
+                          id="ocpui.containers.CareTeams.header"
+                          values={Object {}}
+                        />
+                         for 
+                        <InlineLabel__InlineLabel
+                          htmlFor="patient_name_1"
+                        >
+                          <span
+                            id="patient_name_1"
+                          >
+                            firstName lastName
+                          </span>
+                           
+                        </InlineLabel__InlineLabel>
+                        are :
+                      </div>
+                    </InfoSection__InfoSection>
+                  </Cell__Cell>
+                </Grid__Grid>
+              </SizeMe(StickyDiv__StickyDiv)>,
+              false,
+              <styled.div>
+                <SizeMe(CareTeamTable)
+                  elements={
+                    Array [
+                      Object {
+                        "id": "1",
+                        "name": "a",
+                        "subjectFirstName": "subjectFirstName1",
+                        "subjectId": "subjectId1",
+                        "subjectLastName": "subjectLastName1",
+                      },
+                      Object {
+                        "id": "2",
+                        "name": "b",
+                        "subjectFirstName": "subjectFirstName2",
+                        "subjectId": "subjectId2",
+                        "subjectLastName": "subjectLastName2",
+                      },
+                    ]
+                  }
+                  isExpanded={false}
+                  isPatient={true}
+                  manageCareTeamUrl="/ocp-ui/manage-care-team"
+                  onSize={[Function]}
+                  relativeTop={0}
+                />
+                <CenterAlignedUltimatePagination
+                  boundaryPagesRange={1}
+                  currentPage={10}
+                  hideEllipsis={false}
+                  hideFirstAndLastPageLinks={false}
+                  hidePreviousAndNextPageLinks={false}
+                  onChange={[Function]}
+                  siblingPagesRange={1}
+                  totalPages={100}
+                />
+                <RecordsRange
+                  currentPage={10}
+                  currentPageSize={undefined}
+                  totalElements={undefined}
+                  totalPages={100}
+                />
+              </styled.div>,
+            ],
+            "fontSize": "12px",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Grid__Grid
+                  columns={1}
+                  gap=""
+                >
+                  <Cell__Cell>
+                    <InfoSection__InfoSection
+                      fontSize="12px"
+                      margin="10px 10px"
+                      maxWidth="none"
+                      width="auto"
+                    >
+                      <div>
+                        The 
+                        <FormattedMessage
+                          defaultMessage="care teams"
+                          id="ocpui.containers.CareTeams.header"
+                          values={Object {}}
+                        />
+                         for 
+                        <InlineLabel__InlineLabel
+                          htmlFor="patient_name_1"
+                        >
+                          <span
+                            id="patient_name_1"
+                          >
+                            firstName lastName
+                          </span>
+                           
+                        </InlineLabel__InlineLabel>
+                        are :
+                      </div>
+                    </InfoSection__InfoSection>
+                  </Cell__Cell>
+                </Grid__Grid>,
+                "onSize": [Function],
+                "top": "0px",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Cell__Cell>
+                      <InfoSection__InfoSection
+                        fontSize="12px"
+                        margin="10px 10px"
+                        maxWidth="none"
+                        width="auto"
+                      >
+                        <div>
+                          The 
+                          <FormattedMessage
+                            defaultMessage="care teams"
+                            id="ocpui.containers.CareTeams.header"
+                            values={Object {}}
+                          />
+                           for 
+                          <InlineLabel__InlineLabel
+                            htmlFor="patient_name_1"
+                          >
+                            <span
+                              id="patient_name_1"
+                            >
+                              firstName lastName
+                            </span>
+                             
+                          </InlineLabel__InlineLabel>
+                          are :
+                        </div>
+                      </InfoSection__InfoSection>
+                    </Cell__Cell>,
+                    false,
+                  ],
+                  "columns": 1,
+                  "gap": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <InfoSection__InfoSection
+                        fontSize="12px"
+                        margin="10px 10px"
+                        maxWidth="none"
+                        width="auto"
+                      >
+                        <div>
+                          The 
+                          <FormattedMessage
+                            defaultMessage="care teams"
+                            id="ocpui.containers.CareTeams.header"
+                            values={Object {}}
+                          />
+                           for 
+                          <InlineLabel__InlineLabel
+                            htmlFor="patient_name_1"
+                          >
+                            <span
+                              id="patient_name_1"
+                            >
+                              firstName lastName
+                            </span>
+                             
+                          </InlineLabel__InlineLabel>
+                          are :
+                        </div>
+                      </InfoSection__InfoSection>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <div>
+                          The 
+                          <FormattedMessage
+                            defaultMessage="care teams"
+                            id="ocpui.containers.CareTeams.header"
+                            values={Object {}}
+                          />
+                           for 
+                          <InlineLabel__InlineLabel
+                            htmlFor="patient_name_1"
+                          >
+                            <span
+                              id="patient_name_1"
+                            >
+                              firstName lastName
+                            </span>
+                             
+                          </InlineLabel__InlineLabel>
+                          are :
+                        </div>,
+                        "fontSize": "12px",
+                        "margin": "10px 10px",
+                        "maxWidth": "none",
+                        "width": "auto",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "The ",
+                            <FormattedMessage
+                              defaultMessage="care teams"
+                              id="ocpui.containers.CareTeams.header"
+                              values={Object {}}
+                            />,
+                            " for ",
+                            <InlineLabel__InlineLabel
+                              htmlFor="patient_name_1"
+                            >
+                              <span
+                                id="patient_name_1"
+                              >
+                                firstName lastName
+                              </span>
+                               
+                            </InlineLabel__InlineLabel>,
+                            "are :",
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "The ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "defaultMessage": "care teams",
+                              "id": "ocpui.containers.CareTeams.header",
+                              "values": Object {},
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          " for ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": Array [
+                                <span
+                                  id="patient_name_1"
+                                >
+                                  firstName lastName
+                                </span>,
+                                " ",
+                              ],
+                              "htmlFor": "patient_name_1",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "firstName lastName",
+                                  "id": "patient_name_1",
+                                },
+                                "ref": null,
+                                "rendered": "firstName lastName",
+                                "type": "span",
+                              },
+                              " ",
+                            ],
+                            "type": [Function],
+                          },
+                          "are :",
+                        ],
+                        "type": "div",
+                      },
+                      "type": [Function],
+                    },
+                    "type": [Function],
+                  },
+                  false,
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <SizeMe(CareTeamTable)
+                    elements={
+                      Array [
+                        Object {
+                          "id": "1",
+                          "name": "a",
+                          "subjectFirstName": "subjectFirstName1",
+                          "subjectId": "subjectId1",
+                          "subjectLastName": "subjectLastName1",
+                        },
+                        Object {
+                          "id": "2",
+                          "name": "b",
+                          "subjectFirstName": "subjectFirstName2",
+                          "subjectId": "subjectId2",
+                          "subjectLastName": "subjectLastName2",
+                        },
+                      ]
+                    }
+                    isExpanded={false}
+                    isPatient={true}
+                    manageCareTeamUrl="/ocp-ui/manage-care-team"
+                    onSize={[Function]}
+                    relativeTop={0}
+                  />,
+                  <CenterAlignedUltimatePagination
+                    boundaryPagesRange={1}
+                    currentPage={10}
+                    hideEllipsis={false}
+                    hideFirstAndLastPageLinks={false}
+                    hidePreviousAndNextPageLinks={false}
+                    onChange={[Function]}
+                    siblingPagesRange={1}
+                    totalPages={100}
+                  />,
+                  <RecordsRange
+                    currentPage={10}
+                    currentPageSize={undefined}
+                    totalElements={undefined}
+                    totalPages={100}
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "elements": Array [
+                      Object {
+                        "id": "1",
+                        "name": "a",
+                        "subjectFirstName": "subjectFirstName1",
+                        "subjectId": "subjectId1",
+                        "subjectLastName": "subjectLastName1",
+                      },
+                      Object {
+                        "id": "2",
+                        "name": "b",
+                        "subjectFirstName": "subjectFirstName2",
+                        "subjectId": "subjectId2",
+                        "subjectLastName": "subjectLastName2",
+                      },
+                    ],
+                    "isExpanded": false,
+                    "isPatient": true,
+                    "manageCareTeamUrl": "/ocp-ui/manage-care-team",
+                    "onSize": [Function],
+                    "relativeTop": 0,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "boundaryPagesRange": 1,
+                    "currentPage": 10,
+                    "hideEllipsis": false,
+                    "hideFirstAndLastPageLinks": false,
+                    "hidePreviousAndNextPageLinks": false,
+                    "onChange": [Function],
+                    "siblingPagesRange": 1,
+                    "totalPages": 100,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "currentPage": 10,
+                    "currentPageSize": undefined,
+                    "totalElements": undefined,
+                    "totalPages": 100,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;
