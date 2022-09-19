@@ -14,7 +14,7 @@
 **/ocp-dev-database-backup/
 **/.idea/
 **/*.iml
-#/ehnglobal-ws/ocp-config-dataocp-config-data/
+#/microservices/ocp-config-dataocp-config-data/
 **/.vscode
 **/credentials.json
 **/credentials

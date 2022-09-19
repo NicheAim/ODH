@@ -4,9 +4,9 @@ FHIR4 Server Details:
 
 Github Location : https://github.com/hapifhir/hapi-fhir-jpaserver-starter
 
-Code Location: C:\ehnglobal-ws\hapi-fhir-jpaserver-starter
+Code Location: C:\microservices\hapi-fhir-jpaserver-starter
 
-cd C:\ehnglobal-ws\hapi-fhir-jpaserver-starter
+cd C:\microservices\hapi-fhir-jpaserver-starter
 
 Build : JAVA_HOME="C:\Program Files\Java\jdk-11.0.13" mvn clean install -X -Dmaven.test.skip
 
@@ -21,7 +21,7 @@ PGADMIN :
 postgres / admin
 
 Code path:
-C:\ehnglobal-ws
+C:\microservices
 
 ++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -120,8 +120,8 @@ Using pdAdmin follow these instructions for each database
 
 ## Download project code
 
-1. Download the [ehnglobal-ws.zip file](https://drive.google.com/file/d/1_RiHNBQdFCKnfbOktDxiTZlas_dgzH_9/view?usp=sharing)
-2. Unzip the `ehnglobal-ws.zip` in your workspace like this `$HOME/workspace/`
+1. Download the [microservices.zip file](https://drive.google.com/file/d/1_RiHNBQdFCKnfbOktDxiTZlas_dgzH_9/view?usp=sharing)
+2. Unzip the `microservices.zip` in your workspace like this `$HOME/workspace/`
 3. Download the [ocp-config-data](https://drive.google.com/file/d/1Jgy8hBTvibXniw6P-yr-ONba6p7Kv7Ce/view?usp=sharing)
 4. Unzip the `ocp-config-data.zip` in your workspace like this `$HOME/workspace/`
 
@@ -132,7 +132,7 @@ Using pdAdmin follow these instructions for each database
 1. Open a new terminal
 
 ```
-cd $HOME/workspace/ehnglobal-ws/ocp-ui
+cd $HOME/workspace/microservices/ocp-ui
 npm install
 npm start
 ```
@@ -142,7 +142,7 @@ npm start
 1. Open a new terminal
 
 ```
-cd $HOME/workspace/ehnglobal-ws/ocp-discovery-server/ocp-discovery-server
+cd $HOME/workspace/microservices/ocp-discovery-server/ocp-discovery-server
 mvn clean install
 mvn spring-boot:run
 ```
@@ -152,7 +152,7 @@ mvn spring-boot:run
 1. Open a new terminal
 
 ```
-cd $HOME/workspace/ehnglobal-ws/ocp-config-server/ocp-config-server
+cd $HOME/workspace/microservices/ocp-config-server/ocp-config-server
 mvn clean install
 mvn spring-boot:run
 ```
@@ -162,7 +162,7 @@ mvn spring-boot:run
 1. Open a new terminal
 
 ```
-cd $HOME/workspace/ehnglobal-ws/ocp-fis/ocp-fis
+cd $HOME/workspace/microservices/ocp-fis/ocp-fis
 mvn clean install
 mvn spring-boot:run
 ```
@@ -172,7 +172,7 @@ mvn spring-boot:run
 1. Open a new terminal
 
 ```
-cd $HOME/workspace/ehnglobal-ws/ocp-edge-server/ocp-edge-server
+cd $HOME/workspace/microservices/ocp-edge-server/ocp-edge-server
 mvn clean install
 mvn spring-boot:run
 ```
@@ -182,7 +182,7 @@ mvn spring-boot:run
 1. Open a new terminal
 
 ```
-cd $HOME/workspace/ehnglobal-ws/ocp-ui-api/ocp-ui-api
+cd $HOME/workspace/microservices/ocp-ui-api/ocp-ui-api
 mvn clean install
 mvn spring-boot:run
 ```
@@ -192,7 +192,7 @@ mvn spring-boot:run
 1. Open a new terminal
 
 ```
-cd $HOME/workspace/ehnglobal-ws/ocp-mint-api/ocp-mint-api
+cd $HOME/workspace/microservices/ocp-mint-api/ocp-mint-api
 mvn clean install
 mvn spring-boot:run
 ```
@@ -244,7 +244,7 @@ nvm install 17
 nvm use 17
 node -v
 
-cd $HOME/workspace/ehnglobal-ws/ocp-ui
+cd $HOME/workspace/microservices/ocp-ui
 npm install
 
 npm start
@@ -265,7 +265,7 @@ LAN: http://192.168.86.22:3000
 
 ---
 
-/Users/juan.llera/dev/src/ocp-laptop/ehnglobal-ws/ocp-config-server/ocp-config-server/src/main/resources
+/Users/juan.llera/dev/src/ocp-laptop/microservices/ocp-config-server/ocp-config-server/src/main/resources
 
 Install OCP Code
 
