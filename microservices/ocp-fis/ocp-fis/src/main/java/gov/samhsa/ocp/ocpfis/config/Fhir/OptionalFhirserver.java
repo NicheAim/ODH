@@ -19,30 +19,14 @@ public class OptionalFhirserver {
     private FhirRepository gcpFhirRepository;
 
     @Autowired
-    public OptionalFhirserver(@Qualifier("FhirProxyImpl") FhirRepository proxyfhirRepository,
-            @Qualifier("FhirHapiFhirImpl") FhirRepository hapiFhirRepository,
-            @Qualifier("FhirGcpImpl") FhirRepository gcpFhirRepository) {
-        this.proxyfhirRepository = proxyfhirRepository;
+    public OptionalFhirserver(@Qualifier("FhirHapiFhirImpl") FhirRepository hapiFhirRepository) {
         this.hapiFhirRepository = hapiFhirRepository;
-        this.gcpFhirRepository = gcpFhirRepository;
     }
 
     public IGenericClient getClient(FhirContext fhirContext, FisProperties fisProperties) {
-        if (fisProperties.getFhir().getData_store_tech().equals("gcp")) {
-            log.info("Connecting to GCP...");
-            log.info("SERVER URL: " + fisProperties.getFhir().getServerUrl());
-            return gcpFhirRepository.getClient(fhirContext, fisProperties);
-        } else if (fisProperties.getFhir().getData_store_tech().equals("hapi")) {
             log.info("Connecting to HAPI FHIR...");
             log.info("SERVER URL: " + fisProperties.getFhir().getServerUrl());
-
             return hapiFhirRepository.getClient(fhirContext, fisProperties);
-        } else {
-            log.info("Connecting to FHIR Proxy...");
-            log.info("SERVER URL: " + fisProperties.getFhir().getServerUrl());
-            // FhirRepository fhirRepositoryProxy = new FhirProxyImpl();
-            return proxyfhirRepository.getClient(fhirContext, fisProperties);
-        }
     }
 
 }
